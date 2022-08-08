@@ -87,6 +87,180 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* ------------------ Base Header - Footer Styles ----------------- */
+
+header, 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/*  Header styles */
+
+header.content-wrapper {
+  display: flex;  
+  justify-content: center;
+
+}
+
+header,
+nav {
+  display: flex;
+   
+  
+  
+}
+
+header, 
+nav, 
+ul {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+
+/* ------------------- Mobile Styles - Homepage -------------------- */
+
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+
+} 
+
+.features .features-items {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.reviews h2,h3  {
+  display: flex;
+  justify-content: flex-start; 
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.mission {
+  display: flex; 
+  justify-content: center;
+}
+
+
+.faq {
+  display: flex;
+}
+
+.faq.content-wrapper {
+  display: flex;
+}
+
+/*  Footer */
+
+footer {
+  flex-direction: column;
+  align-content: center;
+}
+
+ .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+
+/* 
+footer .contact  {
+  display: flex;
+align-items: center;
+ flex-direction: column;
+} */
+
+
+/* stuck on aligning address here**************************** */
+/* 
+
+address {
+  display: flex;
+  align-content: center;
+ 
+}
+
+address .contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+/* 
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+} */
+
+/* .contact p{
+  display: flex;
+  align-items: center;
+} */
+
+
+
+footer .social-icons{ 
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+footer .social h4 {
+  display: flex;
+  justify-content: center;
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
