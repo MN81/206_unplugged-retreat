@@ -94,23 +94,23 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 
 }
-
-/*  Header styles */
 
 header.content-wrapper {
   display: flex;  
   justify-content: center;
-
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header,
 nav {
   display: flex;
-   
-  
-  
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;    
 }
 
 header, 
@@ -118,39 +118,52 @@ nav,
 ul {
   display: flex;
   justify-content: space-around;
-  
+}
+
+footer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
+footer .social-icons{ 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+footer .social h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
 /* ------------------- Mobile Styles - Homepage -------------------- */
 
+/*  Hero Area */
 
 .hero-area {
   display: flex;
   justify-content: center;
-  
+  flex-flow: row wrap;
 }
+
+/*  Aside */
 
 aside {
   display: flex;
   justify-content: center;
-}
-
-.features {
-  display: flex;
-  justify-content: center;
-
-} 
-
-.features .features-items {
- display: flex;
- flex-direction: column;
- align-items: center;
-}
-
-.reviews h2,h3  {
-  display: flex;
-  justify-content: flex-start; 
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .form {
@@ -158,107 +171,73 @@ aside {
   flex-direction: column;
 }
 
+
+/*  Features  */
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+} 
+
+.features .features-items {
+ display: flex;
+ justify-content: center;
+  align-items: center;
+ flex-flow: row wrap;
+}
+
+/*  Reviews  */
+
+.reviews  {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+
+
+
+
+/* ==========================================================================
+   About Page
+   ========================================================================== */
+
+
 .mission {
   display: flex; 
   justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+
+
+/* ==========================================================================
+   FAQ Page
+   ========================================================================== */
 
 .faq {
   display: flex;
-}
-
-.faq.content-wrapper {
-  display: flex;
-}
-
-/*  Footer */
-
-footer {
-  flex-direction: column;
-  align-content: center;
-}
-
- .contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-
-
-
-/* 
-footer .contact  {
-  display: flex;
-align-items: center;
- flex-direction: column;
-} */
-
-
-/* stuck on aligning address here**************************** */
-/* 
-
-address {
-  display: flex;
-  align-content: center;
- 
-}
-
-address .contact {
-  display: flex;
-  align-items: center;
   justify-content: center;
-} */
-/* 
-.contact {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  align-content: center;
-} */
-
-/* .contact p{
-  display: flex;
-  align-items: center;
-} */
-
-
-
-footer .social-icons{ 
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
+  flex-flow: row wrap;
 }
 
-footer .social h4 {
+
+.faq .content-wrapper {
   display: flex;
   justify-content: center;
-
-  
+  align-items: center;
+  flex-flow: row wrap;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ==========================================================================
