@@ -116,8 +116,7 @@ header .content-wrapper {
   margin: 0;
 }
 
-header,
-nav {
+header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -125,9 +124,7 @@ nav {
   width: 60%;
 }
 
-header, 
-nav, 
-ul {
+header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -457,15 +454,182 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Tablet styles here */
+  
+  /* General styles */
+
+  .content-wrapper {
+    width: 640px;
+    margin: 100px 0;
+  }
+  
+  /* Header */
+
+  header {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  header .content-wrapper {
+    width: 83% ;
+    justify-content: space-around;
+   
+  }
+
+  header nav { 
+    width: 29%;
+  }
+
+  header nav ul {
+    width: 17%;
+    
+    
+
+  }
+
+ .header-divider {
+  display: none;
+ }
+
+ /* Hero area */
+
+ /* Aside */
+ 
+ aside .content-wrapper {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between ;
+  flex-flow: row nowrap ;
+ }
+ 
+ aside .content-wrapper .form-description,
+ aside .content-wrapper .form {
+    width: 83%;
+    margin: 0;
+  }
+
+  /* Features */
+
+  .features article {
+    width: 42%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin: 50px 0;
+    flex-basis: auto;
+   
+  }
+
+
+  .features .features-item-description {
+    width: 42%;
+
+  }
+
+  .computer-room {
+    margin-bottom: 59px;
+  }
+
+
+/* Reviews */
+.reviews article {
+  width: 83%;
+  display: flex;
+  justify-content: flex-end;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+.reviews article div {
+    width: 83%;         
+}
+
+/* Footer */
+footer .content-wrapper {
+    width: 83%;
+    margin: 100px 0;
+}
+
+.footer-content {
+  width: 64%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0;
+}
+
+footer .contact {
+    margin-bottom: 0;
+}
+
+footer .copyright {
+    width: 25%;
+}
+
+/* ==========================================================================
+   About Page
+   ========================================================================== */
+.mission-content {   /* stopping here. not sure if h1 needs a new class in html */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.mission-content h1 {
+    width: 80%;
+}
+
+.mission-content p {
+  padding-right: 21px;
+  width: 38%;
+  margin: 0;
+}
+
+.contact-section .content-wrapper h2 {
+    width: 66%;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    width: 81%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 64%;
+  margin-left: 72px;
+}
+
+/* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+
+.faq .content-wrapper {
+  justify-content: space-between;
+}
+
+.faq-content {
+  flex-basis: 40%;
+}
+
+.faq h2 {
+  width: 100%;
+}
+
+
+
+
+
+}
+
+
+ @media only screen and (min-width: 1200px) {
+  /* Desktop styles here */
 }
 
 /* ==========================================================================
