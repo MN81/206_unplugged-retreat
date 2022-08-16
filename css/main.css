@@ -467,25 +467,23 @@ aside {
   /* Header */
 
   header {
-    width: 100%;
+    display: flex;
     justify-content: space-around;
+    padding: 33px 0;
   }
 
   header .content-wrapper {
-    width: 83% ;
-    justify-content: space-around;
+    width: 83%;
+    justify-content: space-between;
    
   }
 
   header nav { 
-    width: 29%;
+    width: 17%;
   }
 
   header nav ul {
-    width: 17%;
-    
-    
-
+    justify-content: space-between;
   }
 
  .header-divider {
@@ -500,62 +498,54 @@ aside {
   margin: 50px 0;
   display: flex;
   justify-content: space-between ;
-  flex-flow: row nowrap ;
+  flex-flow: row wrap ;
  }
  
  aside .content-wrapper .form-description,
  aside .content-wrapper .form {
-    width: 83%;
+    width: 40%;
     margin: 0;
   }
 
   /* Features */
 
   .features article {
-    width: 42%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column;
-    margin: 50px 0;
-    flex-basis: auto;
+    flex-flow: column wrap;
+    flex-basis: 50%;
    
   }
 
 
   .features .features-item-description {
-    width: 42%;
+    width: 50%;
 
-  }
-
-  .computer-room {
-    margin-bottom: 59px;
   }
 
 
 /* Reviews */
 .reviews article {
-  width: 83%;
+  /* width: 83%; */
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .reviews article div {
-    width: 83%;         
+    width: 49%;         
 }
 
 /* Footer */
 footer .content-wrapper {
-    width: 83%;
+    width: 64%;
     margin: 100px 0;
 }
 
 .footer-content {
-  width: 64%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  margin: 0;
+  align-items: center;
 }
 
 footer .contact {
@@ -563,47 +553,32 @@ footer .contact {
 }
 
 footer .copyright {
-    width: 25%;
+    width: 25%; /* should this be 100%? */
 }
 
 /* ==========================================================================
    About Page
    ========================================================================== */
-.mission-content {   /* stopping here. not sure if h1 needs a new class in html */
+.mission-content {   
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 100px;
-}
-
-.mission-content h1 {
-    width: 80%;
+ padding-top: 20px;
 }
 
 .mission-content p {
-  padding-right: 21px;
   width: 38%;
-  margin: 0;
-}
+ }
 
 .contact-section .content-wrapper h2 {
-    width: 66%;
+    width: 83%;
 }
 
 .contact-content {
     display: flex;
     justify-content: space-between ;
-    align-items: center;
-    width: 81%;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  width: 64%;
-  margin-left: 72px;
-}
+    align-items: flex-start;
+  }
 
 /* ==========================================================================
    FAQ Page
@@ -620,8 +595,6 @@ footer .copyright {
 .faq h2 {
   width: 100%;
 }
-
-
 
 
 
