@@ -173,6 +173,14 @@ header {
   padding: 15px 0;
 }
 
+header figure {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 header .content-wrapper {
   display: flex;  
   justify-content: center;
@@ -248,7 +256,12 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('/img/hero-image.png') center no-repeat #333;
+  background-size: cover;
+  /* height: 500px; */
 }
+
+
 
 .hero-area h1 {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
@@ -303,6 +316,9 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('/img/features-image.png') center no-repeat #333;
+  background-size: cover;
+  /* height: 1450px; */
 } 
 
 .features .features-items {
@@ -334,7 +350,6 @@ input[type=button] {
   justify-content: center;
   flex-flow: row wrap;
   background-color: #2a423a;
- 
 }
 
 .reviews h2 {
@@ -342,6 +357,10 @@ input[type=button] {
   margin-bottom: 40px;
   line-height: 1;
 }
+
+/* .reviews img {
+  height: 200px;
+} */
 
 .reviews h3 {
   width: 54%;
@@ -541,6 +560,10 @@ input[type=button] {
    
   }
 
+  header figure {
+    width: 29%;
+  }
+
   header nav { 
     width: 20%;
   }
@@ -554,6 +577,10 @@ input[type=button] {
  }
 
  /* Hero area */
+ /* .hero-area {
+  height: 600px;
+ } */
+
   .hero-area h1 {
     width: 84%;
     font-size: 3em;
@@ -579,6 +606,10 @@ input[type=button] {
 
   /* Features */
 
+  /* .features {
+    height: 860px;
+  } */
+
   .features h2 {
     width: 97%;
     margin-bottom: 20px;
@@ -600,9 +631,12 @@ input[type=button] {
 
 
 /* Reviews */
-
 .reviews h2 {
   width: 76%;
+}
+
+.reviews figure {
+  width: 41%;
 }
 
 .reviews h3 {
@@ -611,7 +645,8 @@ input[type=button] {
 
 .reviews article {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .reviews article div {
@@ -699,6 +734,8 @@ footer .copyright {
   width: 960px;
 }
 
+
+
 a {
   font-size: 1.125em;
 }
@@ -736,6 +773,10 @@ aside .content-wrapper .form-description,
 
 
 /* Features */
+
+/* .features {
+  height: 808px;
+} */
 
 .features article {
   flex-basis: 33%;
