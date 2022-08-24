@@ -258,7 +258,7 @@ footer .copyright {
   flex-flow: row wrap;
   background: url('/img/hero-image.png') center no-repeat #333;
   background-size: cover;
-  /* height: 500px; */
+  min-height: 500px;
 }
 
 
@@ -318,7 +318,6 @@ input[type=button] {
   flex-flow: row wrap;
   background: url('/img/features-image.png') center no-repeat #333;
   background-size: cover;
-  /* height: 1450px; */
 } 
 
 .features .features-items {
@@ -357,10 +356,6 @@ input[type=button] {
   margin-bottom: 40px;
   line-height: 1;
 }
-
-/* .reviews img {
-  height: 200px;
-} */
 
 .reviews h3 {
   width: 54%;
@@ -591,12 +586,11 @@ input[type=button] {
  }
 
  /* Hero area */
- /* .hero-area {
-  height: 600px;
- } */
+ .hero-area {
+  min-height: 600px;
+ }
 
   .hero-area h1 {
-    width: 84%;
     font-size: 3em;
     line-height: 1em;
     margin: 0;
@@ -619,10 +613,6 @@ input[type=button] {
   }
 
   /* Features */
-
-  /* .features {
-    height: 860px;
-  } */
 
   .features h2 {
     width: 97%;
@@ -649,10 +639,6 @@ input[type=button] {
   width: 76%;
 }
 
-.reviews figure {
-  width: 41%;
-}
-
 .reviews h3 {
   width: 65%;
 }
@@ -663,6 +649,7 @@ input[type=button] {
   justify-content: space-between;
 }
 
+.reviews article figure,
 .reviews article div {
     width: 49%;         
 }
@@ -707,6 +694,10 @@ footer .copyright {
   width: 45%;
  }
 
+ .map {
+  padding-bottom: 62%;
+ }
+
 .contact-section .content-wrapper h2 {
     width: 83%;
 }
@@ -744,11 +735,13 @@ footer .copyright {
   /* Desktop styles here */
 /* General styles */
 
+header {
+  padding: 15px 0;
+}
+
 .content-wrapper {
   width: 960px;
 }
-
-
 
 a {
   font-size: 1.125em;
@@ -825,6 +818,9 @@ footer .content-wrapper {
     font-size: 3em;
 }
 
+.map {
+  padding-bottom: 64%;
+}
 
 
 
