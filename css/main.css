@@ -266,13 +266,12 @@ footer .copyright {
   min-height: 500px;
 }
 
-
-
 .hero-area h1 {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-size: 2.25em;
   font-weight: 500;
   line-height: 1.2em;
+  margin: 0;
 }
 
 
@@ -542,8 +541,17 @@ input[type=button] {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media only screen and (max-width:280px)
+/* Galaxy Fold styles */
+{
+  .hero-area .content-wrapper {
+  margin-top: 20px;
+}
 
-@media only screen and (min-width: 768px) {
+}
+
+
+   @media only screen and (min-width: 768px) {
   /* Tablet styles here */
   
   /* General styles */
@@ -793,6 +801,9 @@ p {
   font-size: 3.75em;
 }
 
+.content-wrapper {
+  margin-top: 50px;
+}
 
 /* Aside */
 
